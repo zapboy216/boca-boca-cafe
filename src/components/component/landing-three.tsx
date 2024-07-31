@@ -1,4 +1,5 @@
-
+import React from 'react'
+import  Image  from 'next/image'
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
@@ -50,12 +51,12 @@ export function LandingThree() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8">Gallery</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <img src="/placeholder.svg" width={400} height={300} alt="Boca Boca Cafe" className="rounded-lg" />
-            <img src="/placeholder.svg" width={400} height={300} alt="Boca Boca Cafe" className="rounded-lg" />
-            <img src="/placeholder.svg" width={400} height={300} alt="Boca Boca Cafe" className="rounded-lg" />
-            <img src="/placeholder.svg" width={400} height={300} alt="Boca Boca Cafe" className="rounded-lg" />
-            <img src="/placeholder.svg" width={400} height={300} alt="Boca Boca Cafe" className="rounded-lg" />
-            <img src="/placeholder.svg" width={400} height={300} alt="Boca Boca Cafe" className="rounded-lg" />
+            <Image src="/placeholder.svg" width={400} height={300} alt="Boca Boca Cafe" className="rounded-lg" />
+            <Image src="/placeholder.svg" width={400} height={300} alt="Boca Boca Cafe" className="rounded-lg" />
+            <Image src="/placeholder.svg" width={400} height={300} alt="Boca Boca Cafe" className="rounded-lg" />
+            <Image src="/placeholder.svg" width={400} height={300} alt="Boca Boca Cafe" className="rounded-lg" />
+            <Image src="/placeholder.svg" width={400} height={300} alt="Boca Boca Cafe" className="rounded-lg" />
+            <Image src="/placeholder.svg" width={400} height={300} alt="Boca Boca Cafe" className="rounded-lg" />
           </div>
         </div>
       </section>
@@ -101,7 +102,7 @@ export function LandingThree() {
               <h3 className="text-2xl font-bold mb-4">Our Staff</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div>
-                  <img
+                  <Image
                     src="/placeholder.svg"
                     width={200}
                     height={200}
@@ -112,7 +113,7 @@ export function LandingThree() {
                   <p className="text-gray-600">Head Chef</p>
                 </div>
                 <div>
-                  <img
+                  <Image
                     src="/placeholder.svg"
                     width={200}
                     height={200}
