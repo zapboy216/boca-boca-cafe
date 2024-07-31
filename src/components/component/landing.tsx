@@ -177,7 +177,7 @@ export function Landing() {
                   width="100%"
                   height="400"
                   className="rounded-lg"
-                  style={{ border: 0 }}
+                  style={{ border: 1 }}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
