@@ -6,8 +6,10 @@ import { Card } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { useTranslations } from 'next-intl'
 
 export function LandingThree() {
+  const t = useTranslations('Land')
   return (
     <div className="flex flex-col min-h-screen">
       <header className="fixed top-0 left-0 w-full z-50 bg-transparent">
@@ -17,7 +19,7 @@ export function LandingThree() {
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
             <Link href="#" className="text-white hover:text-gray-300" prefetch={false}>
-              Home
+            {t('nav_one')}
             </Link>
             <Link href="#" className="text-white hover:text-gray-300" prefetch={false}>
               Gallery
