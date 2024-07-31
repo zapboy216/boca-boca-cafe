@@ -5,7 +5,6 @@ import { getMessages } from 'next-intl/server';
 import "../globals.css";
 import 'animate.css/animate.min.css';
 
-
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "700"], // Specify the weights you need
@@ -23,7 +22,7 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const messages = await getMessages(locale); // Fetch messages for the given locale
+  const messages = await getMessages({ locale }); // Pass an object with a locale property
 
   return (
     <html lang={locale}>
