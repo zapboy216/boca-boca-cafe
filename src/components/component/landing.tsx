@@ -178,7 +178,6 @@ export function Landing() {
                   height="400"
                   className="rounded-lg"
                   style={{ border: 0 }}
-                  allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />

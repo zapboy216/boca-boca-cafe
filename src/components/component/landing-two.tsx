@@ -11,7 +11,7 @@ export function LandingTwo() {
       <header className="fixed top-0 z-50 w-full bg-transparent">
         <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
           <Link href="#" className="flex items-center" prefetch={false}>
-            <CoffeeIcon className="h-8 w-8 text-white" />
+            Icon
             <span className="ml-2 text-lg font-bold text-white">Boca Boca Cafe</span>
           </Link>
           <nav className="hidden space-x-4 md:flex">
@@ -214,7 +214,7 @@ export function LandingTwo() {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
             <div>
               <Link href="#" className="flex items-center" prefetch={false}>
-                <CoffeeIcon className="h-8 w-8 text-white" />
+                Icon
                 <span className="ml-2 text-lg font-bold text-white">Boca Boca Cafe</span>
               </Link>
               <p className="mt-4 text-white">
@@ -280,45 +280,4 @@ export function LandingTwo() {
   )
 }
 
-function CoffeeIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M10 2v2" />
-      <path d="M14 2v2" />
-      <path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1" />
-      <path d="M6 2v2" />
-    </svg>
-  )
-}
 
-
-function XIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M18 6 6 18" />
-      <path d="m6 6 12 12" />
-    </svg>
-  )
-}

@@ -15,7 +15,7 @@ export function LandingThree() {
       <header className="fixed top-0 left-0 w-full z-50 bg-transparent">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="#" className="text-white font-bold text-2xl" prefetch={false}>
-            Boca Boca Cafe
+            {t('title')}
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
             <Link href="#" className="text-white hover:text-gray-300" prefetch={false}>
