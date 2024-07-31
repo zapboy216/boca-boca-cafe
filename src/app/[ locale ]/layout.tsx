@@ -3,7 +3,6 @@ import { Poppins } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import "../globals.css";
-import 'animate.css/animate.min.css';
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -22,8 +21,8 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  // Ensure we pass an object with a locale property
-  const messages = await getMessages({ locale });
+  // Corrected: Pass an object with locale property
+  const messages = await getMessages({ locale }); // Fetch messages for the given locale
 
   return (
     <html lang={locale}>
